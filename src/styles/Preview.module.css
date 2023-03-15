@@ -1,5 +1,7 @@
 
 .preview {
+    margin-top: -3rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +28,15 @@
 .bike {
     height: 300px;
     width: 500px;
+    margin: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bike img {
+    width: 400px;
+    z-index: -1;
 }
 
 .main {
@@ -45,12 +56,17 @@
 .buttons button {
     border: none;
     padding: 1rem;
-    width: 200px;
+    width: 250px;
     font-size: 1rem;
     font-weight: 800;
     font-family: var(--font-primary);
     text-align: left;
     cursor: pointer;
+    transition: all 200ms;
+}
+
+.buttons button:hover {
+    background-color: var(--clr-secondary);
 }
 
 .selected {
@@ -59,9 +75,36 @@
 }
 
 .cost {
-    background-color: gray;
+    background-color: var(--clr-secondary);
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.cost span {
+    font-weight : 700;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    grid-template-rows: repeat(3, 75px);
+}
+
+.detail-grid div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .info {
-    width: 200px;
+    width: fit-content;
+    border: 3px solid black;
+}
+
+.preview button {
+    padding: 1rem;
+    width: 300px;
 }
