@@ -9,7 +9,7 @@ function Preview ({ bikes }) {
         <div className={Styles.preview}>
             <div className={Styles.heading}>
                 <h3>Bike Models</h3>
-                <h1>Our rental fleet</h1>
+                <h1>Explore our fleet</h1>
                 <p>Choose from a variety of different bike models, from hard tails to full suspension, we have it all.</p>
             </div>
             <div className={Styles.main}>
@@ -21,15 +21,23 @@ function Preview ({ bikes }) {
 
                 </div>
 
-                <img className={Styles.bike} src={bike.image} alt="" />
+                <div className={Styles.bike}>
+                    <img src={bike.image} alt="" />
+                </div>
                 <div className={Styles.info}>
                     <div className={Styles.cost}>
-                        ${bike.cost} fee a day
+                        $ <span>{bike.cost}</span> fee a day
                     </div>
                     <div className={Styles["detail-grid"]}>
-
+                        <div>Size</div>
+                        <div>{bike.size}"</div>
+                        <div>Suspension</div>
+                        <div>{bike.hardtail ? "Hardtail" : "Full"}</div>
+                        <div>Beginner Friendly</div>
+                        <div>{bike.beginner ? "Yes" : "No"}</div>
                     </div>
                 </div>
+             
             </div>
         </div>
     )
