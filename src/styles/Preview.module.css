@@ -67,6 +67,7 @@
 
 .buttons button:hover {
     background-color: var(--clr-secondary);
+    color: white;
 }
 
 .selected {
