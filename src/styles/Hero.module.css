@@ -1,8 +1,11 @@
 
 .hero {
+    padding: 10rem 0;
+    width: 100%;
     gap: 1rem;
-    padding: 10rem 20rem;
+    height: 550px;
     display: flex;
+    justify-content: center;
 }
 
 .left {
@@ -10,19 +13,7 @@
     flex-direction: column;
     padding-top: 3rem;
     margin-right: 3rem;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-}
-
-.right svg {
-    z-index: -1;
-    position: relative;
-    top: -700px;
-    right: -100px;
-    height: 700px;
+    width: 30%;
 }
 
 .left h4 {
@@ -68,18 +59,26 @@
 
 #rent-btn {
     background-color: var(--clr-secondary);
+    border: 3px solid var(--clr-secondary);
+
 }
 
 #learn-btn {
     background-color: black;
+    transition: all 200ms;
+    border: 3px solid black;
+}
+
+#learn-btn:hover {
+    background-color: white;
+    color: black;
 }
 
 .hero-img {
-    height: 650px;
-    object-fit: contain;
+    height: 500px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .hero {
         padding: 5rem;
         justify-content: center;
