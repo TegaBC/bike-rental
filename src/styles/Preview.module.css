@@ -1,0 +1,67 @@
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.heading h3 {
+    margin: 0;
+}
+
+.heading p{
+    width: 40ch;
+    margin-bottom: 1rem;
+}
+
+.bike {
+    height: 300px;
+    width: 500px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buttons button {
+    border: none;
+    padding: 1rem;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: var(--font-primary);
+    text-align: left;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--clr-secondary);
+    color: white;
+}
+
+.cost {
+    background-color: gray;
+}
+
+.info {
+    width: 200px;
+}
