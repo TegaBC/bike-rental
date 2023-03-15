@@ -63,6 +63,7 @@
     text-align: left;
     cursor: pointer;
     transition: all 200ms;
+    border-radius: 5px;
 }
 
 .buttons button:hover {
@@ -100,9 +101,15 @@
     justify-content: center;
 }
 
+.detail-label {
+    font-weight: 800;
+}
+
 .info {
     width: fit-content;
-    border: 3px solid black;
+    border: 3px solid var(--clr-secondary);
+    border-radius: 5px;
+
 }
 
 .preview button {
