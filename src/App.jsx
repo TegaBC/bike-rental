@@ -1,20 +1,11 @@
 import "./App.css"
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
+import HomePage from "./pages/Home"
 
 function App() {
 
   return (
     <div className="App">
-        <Navbar links={[
-          {linkName: "Home", link: "#"},
-          {linkName: "About", link: "#"},
-          {linkName: "Bike Models", link: "#"},
-          {linkName: "Testimonals", link: "#"},
-          {linkName: "Our Team", link: "#"},
-          {linkName: "Contact", link: "#"}
-        ]} />
-        <Hero />
+        <HomePage />
     </div>
   )
 }
