@@ -11,7 +11,7 @@ const nav = ({ links }) => {
 
     return (
         <nav className={Styles.nav}>
-            <h1 className={Styles.branding}>Bike4Rent</h1>
+            <h1 className={Styles.branding}>Bike2Rent</h1>
             <div className={toggle ? cx(Styles["nav-links"], Styles.toggled) : Styles["nav-links"]}>
                 {links.map(info => renderLink(info))}
             </div>
