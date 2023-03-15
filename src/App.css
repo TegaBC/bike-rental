@@ -12,3 +12,7 @@ body {
     margin: 0;
     font-family: var(--font-primary);
 }
+
+.App {
+    padding: 0rem 5rem;
+}
