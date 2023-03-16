@@ -3,7 +3,7 @@ import Styles from "../styles/Navbar.module.css"
 import cx from "classnames"
 
 function renderLink({ link, linkName }) {
-    return <a target="_blank" href={link}>{linkName}</a>
+    return <a href={link}>{linkName}</a>
 }
 
 const nav = ({ links }) => {
