@@ -24,7 +24,7 @@
     padding: 1.5rem;
     height: 100%;
     box-sizing: border-box;
-    transition: all 200ms;
+    transition: background-color 200ms;
     font-weight: 600;
 }
 
@@ -73,6 +73,11 @@
    .nav-links a{
         padding: .5rem;
         text-align: center;
-        background-color: var(--clr-primary-hover);
+        background-color: var(--clr-secondary);
+        color: white;
+   }
+
+   .nav-links a:hover {
+    background-color: var(--clr-secondary-hover);
    }
 }
