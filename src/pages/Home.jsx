@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Preview from "../components/Preview"
+import BookingForm from "../components/BookingForm"
 
 const navLinks = [
   {linkName: "Home", link: "#"},
@@ -18,6 +19,8 @@ const fakeData = [
     {name: "Vitus", image: "src/images/bikes/vitus.jpg", hardtail: false, size: 28, beginner: false, cost: 25},
   ]
 
+const locations = ["London", "Southend", "Margate", "Lake District", "Brighton", "Glasgow"]
+
 function home() {
 
   return (
@@ -25,6 +28,7 @@ function home() {
         <Navbar links={navLinks} />
         <Hero />
         <Preview bikes={fakeData} />
+        <BookingForm bikes={fakeData} locations={locations}/>
     </>
   )
 }
