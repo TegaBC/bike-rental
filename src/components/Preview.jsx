@@ -29,8 +29,8 @@ function Preview ({ bikes }) {
                         $ <span>{bike.cost}</span> fee a day
                     </div>
                     <div className={Styles["detail-grid"]}>
-                        <div className={Styles["detail-label"]}>Size</div>
-                        <div>{bike.size}"</div>
+                        <div className={Styles["detail-label"]}>Sizes</div>
+                        <div>{bike.minSize}" - {bike.maxSize}"</div>
                         <div className={Styles["detail-label"]}>Suspension Type</div>
                         <div>{bike.hardtail ? "Hardtail" : "Full"}</div>
                         <div className={Styles["detail-label"]}>Beginner Friendly</div>
