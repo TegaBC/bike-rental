@@ -2,6 +2,8 @@ import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Preview from "../components/Preview"
 import BookingForm from "../components/BookingForm"
+import FeatureDisplay from "../components/FeatureDisplay"
+
 
 const navLinks = [
   {linkName: "Home", link: "#"},
@@ -21,6 +23,17 @@ const fakeData = [
 
 const locations = ["London", "Southend", "Margate", "Lake District", "Brighton", "Glasgow"]
 
+const features = [{
+  name:  "Huge Range", 
+  info: "We offer a huge range of bikes for beginners and experts, we have the perfect bike to fit your needs",
+  icon: ""},
+  { name:  "Easy Pickup", 
+    info: "We have a wide range of pickup and drop-off locations around the UK, pick the nearest one to you!",
+    icon: ""},
+  { name:  "Friendly Staff", 
+    info: "Our friendly staff team at our locations and online support will help you get out on the trails smoothly",
+    icon: ""}]
+
 function home() {
 
   return (
@@ -29,6 +42,7 @@ function home() {
         <Hero />
         <BookingForm bikes={fakeData} locations={locations}/>
         <Preview bikes={fakeData} />
+        <FeatureDisplay features={features} heading="Quick & easy bike rentals" subHeading="Get on the trails soon"/>
     </>
   )
 }
