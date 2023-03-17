@@ -1,6 +1,5 @@
 
 .preview {
-    margin-top: -3rem;
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -9,6 +8,9 @@
 
 .heading {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heading h1 {
@@ -21,7 +23,9 @@
 }
 
 .heading p{
-    width: 40ch;
+    margin: 0;
+    max-width: 40ch;
+    padding: 0 2rem;
     margin-bottom: 1rem;
 }
 
@@ -114,7 +118,7 @@
 
 .preview button {
     padding: 1rem;
-    width: 300px;
+    max-width: 300px;
 }
 
 @media screen and (max-width: 1000px) {
