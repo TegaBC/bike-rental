@@ -1,8 +1,8 @@
 
 .hero {
-    padding: 10rem 5rem;
+    padding: 10rem 5rem 7rem 5rem;
     gap: 1rem;
-    height: 550px;
+    min-height: 550px;
     display: flex;
     justify-content: center;
 }
@@ -47,6 +47,7 @@
     color: white;
     width: 150px;
     padding: 1rem;
+   
     font-weight: 600;
     font-size: 1rem;
     font-family: var(--font-primary);
@@ -95,5 +96,19 @@
         align-items: center;
         margin: 0;
         width: 100%;
+    }
+
+    .left p {
+        max-width: 50ch;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        padding: 1rem;
+    }
+
+    .button-wrapper {
+        flex-direction: column;
     }
 }
