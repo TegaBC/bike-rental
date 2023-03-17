@@ -13,10 +13,10 @@ const navLinks = [
 ]
 
 const fakeData = [
-    {name: "DiamondBack", image: "src/images/bikes/db.jpg", hardtail: true, size: 20, beginner: false, cost: 35},
-    {name: "Forme", image: "src/images/bikes/forme.png", hardtail: true, size: 26, beginner: true, cost: 15},
-    {name: "Trek", image: "src/images/bikes/trek.jpg", hardtail: true, size: 24, beginner: false, cost: 20},
-    {name: "Vitus", image: "src/images/bikes/vitus.jpg", hardtail: false, size: 28, beginner: false, cost: 25},
+    {name: "DiamondBack", image: "src/images/bikes/db.jpg", hardtail: true, minSize: 15, maxSize: 20, beginner: true, cost: 20},
+    {name: "Forme", image: "src/images/bikes/forme.png", hardtail: true, minSize: 15, maxSize: 22, beginner: true, cost: 25},
+    {name: "Trek", image: "src/images/bikes/trek.jpg", hardtail: true, minSize: 16, maxSize: 24, beginner: false, cost: 35},
+    {name: "Vitus", image: "src/images/bikes/vitus.jpg", hardtail: false, minSize: 18, maxSize: 24, beginner: false, cost: 40},
   ]
 
 const locations = ["London", "Southend", "Margate", "Lake District", "Brighton", "Glasgow"]
@@ -27,8 +27,8 @@ function home() {
     <>
         <Navbar links={navLinks} />
         <Hero />
-        <Preview bikes={fakeData} />
         <BookingForm bikes={fakeData} locations={locations}/>
+        <Preview bikes={fakeData} />
     </>
   )
 }
