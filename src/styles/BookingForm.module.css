@@ -1,23 +1,25 @@
 
 .wrapper{
-    padding: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .wrapper form {
+    width: clamp(100px, 75%, 1000px);
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
     grid-auto-rows: 75px;
     
     border-radius: 5px;
     padding: 2rem;
-    width: 85%;
     gap: 1rem;
-    -webkit-box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.1);
-    box-shadow: 0px 0px 37px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 37px 5px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 37px 5px rgba(0, 0, 0, 0.05);
 }
 
 .form-entry {
@@ -25,24 +27,43 @@
     flex-direction: column;
 }
 
-.form-entry label {
+.form-entry label, .form-entry-button label {
+    height: 2rem;
     font-weight: 500;
 }
 
 .form-entry select, input {
     padding: 10px 5px;
     border: 1px solid rgb(184, 184, 184);
-    width: 250px;
-    color: rgb(184,184,184) ;
+    color: rgb(184,184,184);
+}
+
+.form-entry select option {
+    color: black;
 }
 
 .form-entry-button {
-    width: 250px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 }
 
 .form-entry-button button {
-    width: 100%;
-    height: 63%;
+    color: white;
+    font-weight: 800;
+    font-family: var(--font-primary);
+    background-color: var(--clr-secondary);
+    padding: 10px 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 200ms;
+}
+
+.form-entry-button button:hover {
+    background-color: var(--clr-secondary-hover);
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper form {
+        width: 100%;
+    }
 }
