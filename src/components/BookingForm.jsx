@@ -38,6 +38,7 @@ const BookingForm = function( { bikes, locations } ) {
                 </div>
                 
                 <div className={Styles["form-entry-button"]}>
+                    <label htmlFor=""></label>
                     <button className={Styles["submit"]} type="submit">Search</button>
                 </div>
             </form>
