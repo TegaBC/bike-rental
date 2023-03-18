@@ -7,20 +7,16 @@ function displayFeature(feature) {
 
     return(
         <div className={Styles.feature}>
-            <div className={Styles["icon-background"]}>
-                <img src={icon} alt="" />
-            </div>
+            <img src={icon} alt="" />
             <h2>{name}</h2>
             <p>{info}</p>
         </div>
     )
 }
 
-function featureDisplay( { subHeading, heading, features } ) {
+function featureDisplay( { features } ) {
     return (
         <div className={Styles["display-wrapper"]}>
-            <h3>{subHeading}</h3>
-            <h1>{heading}</h1>
             <div className={Styles["feature-wrapper"]}>
                 {features.map(feature => displayFeature(feature))}
             </div>
