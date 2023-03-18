@@ -7,11 +7,6 @@ function Preview ({ bikes }) {
 
     return (
         <div className={Styles.preview}>
-            <div className={Styles.heading}>
-                <h3>Bike Models</h3>
-                <h1>Explore our fleet</h1>
-                <p>Choose from a variety of different bike models, from hard tails to full suspension, we have it all.</p>
-            </div>
             <div className={Styles.main}>
                 <div className={Styles.buttons}>
 
