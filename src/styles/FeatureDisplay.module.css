@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 4rem;
+    text-align: center;
 }
 
 .feature {
@@ -12,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 
 .feature h2 {
@@ -24,6 +27,7 @@
     max-width: 25ch;
     color: rgb(93, 93, 93); 
     font-size: .8rem;
+    font-weight: 600;
 }
 
 .feature img{
@@ -38,24 +42,13 @@
     border-radius: 1rem;
 }
 
-.display-wrapper h3 {
-    margin: 0;
-}
-
-.display-wrapper h1 {
-    font-size: 3rem;
-    margin: 0;
-    padding: 1rem;
-}
-
-.icon-wrapper {
-    aspect-ratio: 1;
-    height: 100%;
-    background-color: black;
+.feature img {
+    max-height: 100px;
 }
 
 .feature-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 7rem;
+    gap: 1rem 7rem;
+    justify-content: center;
 }
