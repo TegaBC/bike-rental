@@ -1,0 +1,9 @@
+
+.footer {
+    min-height: 150px;
+    background-color: var(--clr-banner);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
