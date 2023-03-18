@@ -7,29 +7,6 @@
     align-items: center;
 }
 
-.heading {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.heading h1 {
-    font-size: 3rem;
-    margin: 1rem;
-}
-
-.heading h3 {
-    margin: 0;
-}
-
-.heading p{
-    margin: 0;
-    max-width: 40ch;
-    padding: 0 2rem;
-    margin-bottom: 1rem;
-}
-
 .bike {
     height: 300px;
     width: 500px;
