@@ -1,0 +1,30 @@
+
+.main {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/assets/pagebackground.jpg);
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+}
+
+.main h1, .main h2 {
+    margin: 0;
+}
+
+.main h1 {
+    font-size: 3rem;
+}
+
+.main h2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
