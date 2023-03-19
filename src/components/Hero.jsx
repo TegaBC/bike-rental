@@ -20,7 +20,7 @@ function hero() {
                 </div>
             </div>
             <div className={Styles.right}>
-                <img className={Styles["hero-img"]} src="src/images/hero/heroimg.png" alt="Mountain bike" />
+                <img className={Styles["hero-img"]} src="/images/hero/heroimg.png" alt="Mountain bike" />
             </div>
         </div>
     )
