@@ -1,11 +1,11 @@
 import Styles from "../styles/TripleHeading.module.css"
 
-function heading( { heading, subHeading, parahraph }) {
+function heading( { heading, subHeading, paragraph }) {
     return (
         <div className={Styles["heading"]}>
             <h3>{subHeading}</h3>
             <h1>{heading}</h1>
-            <p>{parahraph}</p>
+            <p>{paragraph}</p>
         </div>
     )
 }
