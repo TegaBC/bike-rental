@@ -20,7 +20,7 @@ const nav = () => {
 
     return (
         <nav className={Styles.nav}>
-            <h1 className={Styles.branding}>Bike2Rent</h1>
+            <Link to="/" className={Styles.branding}>Bike2Rent</Link>
             <div className={toggle ? cx(Styles["nav-links"], Styles.toggled) : Styles["nav-links"]}>
                 {navLinks.map(info => renderLink(info))}
             </div>
