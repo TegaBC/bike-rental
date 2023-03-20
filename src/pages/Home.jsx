@@ -42,13 +42,13 @@ function home() {
         <Hero />
         <BookingForm bikes={fakeData} locations={locations}/>
         <TripleHeading heading="Explore our fleet" subHeading="Bike Models" 
-        parahraph="Choose from a variety of different bike models, from hard tails to full suspension, we have it all."/>
+        paragraph="Choose from a variety of different bike models, from hard tails to full suspension, we have it all."/>
         <Preview bikes={fakeData} />
         <Banner heading="Crush the trails on a rental!" subText="Top Bikes. Easy pickup. Open 365 days a year." />
         <TripleHeading heading="Quick & easy bike rentals" subHeading="Get on the trails soon"/>
         <FeatureDisplay features={features} heading="Quick & easy bike rentals" subHeading="Get on the trails soon"/>
         <TripleHeading heading="Customer Testimonials" subHeading="See what our customers say about us" 
-        parahraph="Discover the positive impact we've made on the our clients by reading through their testimonials."/>
+        paragraph="Discover the positive impact we've made on the our clients by reading through their testimonials."/>
         <Testimonial testimonials={testimonials}/>
         <Footer />
     </>
