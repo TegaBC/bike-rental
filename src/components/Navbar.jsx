@@ -7,8 +7,8 @@ import cx from "classnames"
 const navLinks = [
     {linkName: "Home", link: "/"},
     {linkName: "About", link: "/about"},
-    {linkName: "Testimonals", link: "/testimonials"},
-    {linkName: "Contact", link: "#"}
+    {linkName: "Testimonials", link: "/testimonials"},
+    {linkName: "Contact", link: "/contact"}
   ]
 
 function renderLink({ link, linkName }) {
