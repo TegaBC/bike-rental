@@ -2,7 +2,9 @@ import "./App.css"
 import HomePage from "./pages/Home"
 import AboutPage from "./pages/About"
 import TestimonialPage from "./pages/TestimonialPage"
+import ContactPage from "./pages/Contact"
 import { Routes, Route } from "react-router-dom"
+
 import Navbar from "./components/Navbar"
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/testimonials" element={<TestimonialPage/>}/>
+        <Route path="/contact" element={<ContactPage />} />
     </Routes>
   </>
 }
