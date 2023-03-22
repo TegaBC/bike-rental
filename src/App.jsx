@@ -7,13 +7,14 @@ import { Routes, Route } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 
+// <Route path="/about" element={<AboutPage/>}/>
+
 function App() {
 
   return <>
     <Navbar />
     <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="/about" element={<AboutPage/>}/>
         <Route path="/testimonials" element={<TestimonialPage/>}/>
         <Route path="/contact" element={<ContactPage />} />
     </Routes>
