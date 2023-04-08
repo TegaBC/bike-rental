@@ -3,9 +3,9 @@
 <h3 align="center">Bike Rental Site</h3>
 
   <p align="center">
-    A react project built for a fictional bike rental company (portfolio project)
+    A react project built for a fictional bike rental company
     <br />
-    <a href="https://bike-rental.tegabc.co.uk">View Demo</a>
+    <a href="https://bike-rental.tegabc.co.uk" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/TegaBC/bike-rental-site/issues">Report Bug</a>
   </p>
