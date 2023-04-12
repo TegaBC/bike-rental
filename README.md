@@ -3,7 +3,7 @@
 <h3 align="center">Bike Rental Site</h3>
 
   <p align="center">
-    A react project built for a fictional bike rental company
+    A react site built for a fictional bike rental company in the UK
     <br />
     <a href="https://bike-rental.tegabc.co.uk" target="_blank">View Demo</a>
     ·
